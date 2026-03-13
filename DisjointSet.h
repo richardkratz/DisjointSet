@@ -7,8 +7,8 @@ using namespace std;
 
 class DisjointSet {
 	private:
-	vector<size_t>				id;		// Kopfknoten der Knotenindizes in Vektor der Länge n speichern
-	vector<size_t>				rank;	// Zweites Array für Rang des Baums des entsprechenden Knotenindex
+	vector<size_t>	id;		// Kopfknoten der Knotenindizes in Vektor der Länge n speichern
+	vector<size_t>	rank;	// Zweites Array für Rang des Baums des entsprechenden Knotenindex
 	
 	public:
 	// Konstruktoren
@@ -37,8 +37,7 @@ class DisjointSet {
 		if(rank[i] < rank[j]) {
 			rank[j]	+= rank[i];
 			id[i]    = j;
-		}
-		else {
+		} else {
 			rank[i] += rank[j];
 			id[j]    = i;
 		}
@@ -56,3 +55,4 @@ class DisjointSet {
 };
 
 #endif // DISJOINTSET_H
+

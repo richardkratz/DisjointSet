@@ -1,3 +1,5 @@
+// Created by: Richard Kratz - www.richardkratz.com
+
 #ifndef DISJOINTSET_H
 #define	DISJOINTSET_H
 #include <vector>
@@ -5,8 +7,8 @@ using namespace std;
 
 class DisjointSet {
 	private:
-	vector<size_t>				id;		// Kopfknoten der Knotenindizes in Vektor der länge n speichern
-	vector<size_t>				rank;	// Zweites Array für Rang des Baums des entsprechenden Knotenindex
+	vector<size_t>				id;		// Kopfknoten der Knotenindizes in Vektor der LÃ¤nge n speichern
+	vector<size_t>				rank;	// Zweites Array fÃ¼r Rang des Baums des entsprechenden Knotenindex
 	
 	public:
 	// Konstruktoren
@@ -19,7 +21,7 @@ class DisjointSet {
 	DisjointSet() {}
 	~DisjointSet() {}
 
-	// union-find methoden
+	// Union-Find Methoden
 	size_t find(size_t x) {
 		if (id[x] == x)
 			return x;
@@ -41,7 +43,8 @@ class DisjointSet {
 			id[j]    = i;
 		}
 	}
-	// Hilfsmethode um Container mit entsprechenden Daten zu füllen
+
+	// Hilfsmethode um Container mit entsprechenden Daten zu fÃ¼llen
 	void reset(size_t count) {
 		id.clear();
 		rank.clear();
@@ -51,4 +54,5 @@ class DisjointSet {
 		}
 	}
 };
+
 #endif // DISJOINTSET_H

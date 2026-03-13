@@ -1,2 +1,2 @@
 # DisjointSet
-DisjointSet Data Structure in C++
+DisjointSet data structure implementation in C++

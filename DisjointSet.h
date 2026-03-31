@@ -1,4 +1,8 @@
-// Created by: Richard Kratz - www.richardkratz.com
+/*
+ *   Disjoint Set Data Structure for Project TSP - Discrete Optimization Beuth Hochschule Berlin
+ *   Copyright (c) 2013 Richard Kratz - www.richardkratz.com
+ *   All rights reserved.
+ */
 
 #ifndef DISJOINTSET_H
 #define	DISJOINTSET_H
